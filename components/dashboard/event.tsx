@@ -30,7 +30,7 @@ const Event = () => {
       <h3 className='text-xl '>RSVP for Braintrust events</h3>
       <div className='pt-7 space-y-3'>
         {eventData.map((e, index) => (
-          <div className='bg-slate-100 h-32 rounded-lg flex flex-row justify-between items-center p-6 gap-x-3'>
+          <div className='bg-slate-100 h-32 rounded-lg flex flex-row justify-between items-center p-6 gap-x-3' key={index}>
             <div className='flex flex-row gap-x-6'>
               <div className='flex-col items-center justify-center flex p-5 bg-white w-20 h-20 aspect-square rounded-lg'>
                 <p className='text-sm'>{e.month}</p>
